@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/vehiclesListFragment"
+    android:id="@+id/nav_graph.xml">
+    <fragment
+        android:id="@+id/vehiclesListFragment"
+        android:name="com.example.bestmile.ui.VehiclesListFragment"
+        android:label="fragment_vehicles_list"
+        tools:layout="@layout/fragment_vehicles_list">
+        <action
+            android:id="@+id/vehiclesListFragment_to_vehicleDetailsFragment"
+            app:destination="@id/vehicleDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vehicleDetailsFragment"
+        android:name="com.example.bestmile.ui.VehicleDetailsFragment"
+        android:label="fragment_vehicle_details"
+        tools:layout="@layout/fragment_vehicle_details">
+        <action
+            android:id="@+id/vehicleDetailsFragment_to_vehiclesListFragment"
+            app:destination="@id/vehiclesListFragment" />
+    </fragment>
+</navigation>

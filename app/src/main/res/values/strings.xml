@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Vehicles tracker</string>
+    <string name="nearby_vehicles">Nearby vehicles: </string>
+
+</resources>
